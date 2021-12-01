@@ -1,3 +1,4 @@
+//this isn't mine. sorted it into IDE so I can observe
 
 public class BinarySortTree {
 
