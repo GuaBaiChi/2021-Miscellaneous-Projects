@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Reprint {
+public class PrintReprint {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -26,4 +26,3 @@ public class Reprint {
         System.out.println("In a hole in the ground there lived a method");
     }
 }
-

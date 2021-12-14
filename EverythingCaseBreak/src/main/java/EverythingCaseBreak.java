@@ -2,8 +2,8 @@
 
 import java.util.Scanner;
 
-public class Sandbox {
-    
+public class EverythingCaseBreak {
+
     public static Scanner scanner;
 
     public static void main(String[] args) {
@@ -16,22 +16,41 @@ public class Sandbox {
             int userInput = Integer.valueOf(scanner.nextLine());
             // Add code for each menu option
 
-            // Menu option 1)
-            if (userInput == 1) {
-                Echo();
-            } // Menu option 2)
-            else if (userInput == 2) {
-                Add();
-            } //Menu option 3)
-            else if (userInput == 3) {
-                Factorial();
-            } // Menu option 4) Exit here
-            else if (userInput == 4) {
-                System.out.println("Goodbye");
-                active = false;
-            } else {
-                System.out.println("Selection Invalid");
+            switch (userInput) {
+                case 1:
+                    Echo();
+                    break;
+                case 2:
+                    Add();
+                    break;
+                case 3:
+                    Factorial();
+                    break;
+                case 4:
+                    System.out.println("Goodbye");
+                    active = false;
+                    break;
+                default:
+                    System.out.println("Selection Invalid");
+
             }
+
+//            // Menu option 1)
+//            if (userInput == 1) {
+//                Echo();
+//            } // Menu option 2)
+//            else if (userInput == 2) {
+//                Add();
+//            } //Menu option 3)
+//            else if (userInput == 3) {
+//                Factorial();
+//            } // Menu option 4) Exit here
+//            else if (userInput == 4) {
+//                System.out.println("Goodbye");
+//                active = false;
+//            } else {
+//                System.out.println("Selection Invalid");
+//            }
         }
     }
 
@@ -51,7 +70,7 @@ public class Sandbox {
     }
 
     public static void Factorial() {
-        
+
         System.out.println("Enter a number: ");
         int inputFromUser3 = Integer.valueOf(scanner.nextLine());
         int factorial = 1;

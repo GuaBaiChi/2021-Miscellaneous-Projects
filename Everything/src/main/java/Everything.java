@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Sandbox {
+public class Everything {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
