@@ -5,35 +5,32 @@
 
 import java.util.Scanner;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class FizzBuzz {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-
-    int inputFromUser;
-
-    System.out.println("Input a number: ");
-
-    while (true) {
-        inputFromUser = Integer.valueOf(scanner.nextLine());   
-
-    if (inputFromUser == 0) {
-        break;
-    }   
-        
-    else if (inputFromUser %3 == 0 && inputFromUser %5 == 0)
-        System.out.println("fizzbuzz");
-    
-    else if (inputFromUser %3 == 0) {
-        System.out.println("fizz");
-        }
-
-    else if (inputFromUser %5 == 0) {
-        System.out.println("buzz");
-        }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input a number: ");
             
-            System.out.println("Input a number: ");
+
+        while (true) {
+            int input = scanner.nextInt();
             
-            
+            if (input == 0) {
+                System.out.println("Thank you!");
+                break;
+            }
+            else if (input % 3 == 0 && input % 5 ==0) {
+                System.out.println("FizzBuzz");
+            }
+            else if (input % 3 == 0) {
+                System.out.println("Fizz");
+            }
+            else if (input % 5 == 0) {
+                System.out.println("Buzz");
+
+            }
+//            System.out.println("Input a number: ");
         }
     }
-}   
+}
